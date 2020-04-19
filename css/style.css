@@ -1,0 +1,213 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, monospace;
+  background-color: rgb(245, 245, 245);
+}
+.header nav {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.header a {
+  text-decoration: none;
+  font-size: .8em;
+  color: rgb(17, 17, 17);
+}
+.logo{
+    width: 70%;
+}
+@media (min-width: 768px) {
+  .header nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  nav{
+padding: 3em 7em;
+  }
+
+  .header a{
+    margin: 0 5px;
+    
+  }
+
+}
+
+.button {
+    padding: 1em 3em;
+    border-style: groove ;
+    border-width: 2px;
+    text-decoration: none;
+    font-size: 1em;     
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    padding: 2rem;
+    margin-bottom: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+      background-color: var(--backgroud-gray);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+  .hero::after {
+      position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+@media(min-width: 768px){
+    .hero{
+        flex-direction: row;
+    }
+
+    .columna2 {
+        flex: 1;
+    }
+
+    .col1 {
+        flex: 1;
+    }
+}
+
+  .columna2 img{
+     
+      max-width: 100%;
+}
+
+.button .boton1 {
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 1.25em;
+    margin: 1em;
+}
+
+.button a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1.25em;
+    margin: 1em;
+    color:rgb(17, 17, 17);
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgb(17, 17, 17);
+}
+
+@media (min-width: 768px) {
+    .button {
+        flex-direction: row;
+    }
+}
+
+.devs{
+    padding: 3em 2em;
+    background-color: rgb(255, 255, 255);
+}
+
+.dev {
+    display: flex;
+    flex-direction: column;
+}
+
+.desarrollador {
+    position: relative;
+    margin: 1em;
+    flex: 1;
+}
+
+.desarrollador img {
+    max-width: 100%;
+}
+
+.nombre {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    color:  rgb(255, 255, 255);;
+    font-size: 2em;
+}
+
+.developer {
+    position: absolute;
+    bottom: 65px;
+    left: 10px;
+    color: rgb(255, 255, 255);;
+}
+
+.sociales {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+    .dev {
+        flex-direction: row;
+    }
+}
+.prices {
+    padding: 4em 2em;
+    background-color: rgb(245, 245, 245);
+}
+
+.price {
+    background-color: rgb(255, 255, 255);
+    margin: 2em;
+    padding: 2em;
+    flex: 1;
+}
+
+.pre {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    border-bottom: 1px solid rgb(17, 17, 17);
+}
+
+.caracteristicas {
+    border-bottom: 1px solid rgb(17, 17, 17);
+}
+
+.pago {
+    text-align: center;
+}
+
+.pago a {
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+}
+
+@media (min-width: 768px) {
+    .pre {
+        flex-direction: row;
+    }
+}
